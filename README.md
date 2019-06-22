@@ -4,18 +4,26 @@ Bypass ST_CORP's block on torrents
 ## How to use
 
 Make sure to install aria2c
-`brew install aria2c`
-
-`apt install aria2c`
+```shell
+$ brew install aria2c
+# or
+$ apt install aria2c
+```
 
 Install the client
-`go get github.com/noxecane/aria2c-client`
+```shell
+go get github.com/noxecane/aria2c-client
+```
 
 Start aria2c in a new terminal or screen
-`aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all`
+```shell
+aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all
+```
 
 Add downloads
-`aria2c-client <url>`
+```shell
+aria2c-client <url>
+```
 
 ## The plan
 - [x] Build a client that can connect to aria2c on server and add downloads(including torrent)
